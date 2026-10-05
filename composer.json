@@ -1,0 +1,41 @@
+{
+    "name": "tyhpdef/symfony-yaml-impl",
+    "description": "Implementation package for tyhpdef/symfony-yaml. Require tyhpdef/symfony-yaml, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "7.4.18.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/symfony-yaml"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/yaml": "7.4.18"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev"
+    }
+}
